@@ -1,4 +1,4 @@
-package week1.practice_problems;
+package week1.class_problems;
 
 import java.util.HashMap;
 import java.util.Scanner;
