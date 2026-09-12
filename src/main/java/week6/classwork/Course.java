@@ -1,4 +1,4 @@
-package week6.assignment;
+package week6.classwork;
 
 public class Course {
     String code;

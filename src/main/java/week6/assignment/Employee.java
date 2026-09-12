@@ -1,4 +1,4 @@
-package week6.classwork;
+package week6.assignment;
 
 public class Employee {
     String empId;
