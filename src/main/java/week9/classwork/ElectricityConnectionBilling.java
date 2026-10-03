@@ -1,4 +1,4 @@
-package week9.homework;
+package week9.classwork;
 
 import java.util.ArrayList;
 import java.util.List;
