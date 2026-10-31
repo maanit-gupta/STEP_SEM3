@@ -21,6 +21,65 @@ This repository contains the complete solutions for all **STEP Semester 3** Java
 | **Session 8** | OOP: Polymorphism, Method Overriding & Dispatch | `feature/session_8` | 26-09-2026 | Completed |
 | **Session 9** | OOP: Abstraction & Interface Implementations | `feature/session_9` | 03-10-2026 | Completed |
 | **Session 10** | Category C DS & Problem Solving Practice | `feature/session_10` | 11-10-2026 | Completed |
+| **Session 11** | Category C: Search, Hashing, Sorting Algorithms | `feature/session_11` | 31-10-2026 | Completed |
+
+---
+
+## 🗂️ Repository Structure
+
+```
+STEP_SEM3/
+├── README.md
+├── .gitignore
+└── src/
+    └── main/
+        └── java/
+            ├── week1/
+            │   ├── class_problems/        # In-class live coding solutions
+            │   │   └── *.java
+            │   └── assignment_problems/   # Homework / assignment solutions
+            │       └── *.java
+            ├── week2/
+            │   ├── class_problems/
+            │   └── assignment_problems/
+            ├── ...
+            ├── week10/
+            │   ├── classwork/
+            │   └── homework/
+            └── week11/
+                ├── classwork/             # 10 Category C Part A problems
+                │   ├── LibraryCatalogLookup.java
+                │   ├── WarehouseBinGridScan.java
+                │   ├── TransactionDuplicateCheck.java
+                │   ├── EmployeeIdLookup.java
+                │   ├── PairWithTargetSum.java
+                │   ├── BestSingleTradeProfit.java
+                │   ├── InsertPositionInSortedList.java
+                │   ├── SpiralOrderTraversal.java
+                │   ├── PairSumSortedArray.java
+                │   └── RemoveDuplicatesSortedArray.java
+                └── homework/              # 5 Sorting Algorithm assignments
+                    ├── HeightLineUp.java
+                    ├── PrizeTable.java
+                    ├── LibraryBookShelf.java
+                    ├── QueueOrderCheck.java
+                    └── DiceThrowTally.java
+```
+
+### Conventions
+
+| Item | Convention | Example |
+|------|-----------|---------|
+| **Branch** | `feature/session_<N>` | `feature/session_11` |
+| **Source root** | `src/main/java/` | — |
+| **Week folder** | `week<N>/` | `week11/` |
+| **Classwork folder** | `classwork/` or `class_problems/` | `week11/classwork/` |
+| **Homework folder** | `homework/` or `assignment_problems/` | `week11/homework/` |
+| **Package declaration** | `package week<N>.classwork;` or `package week<N>.homework;` | `package week11.classwork;` |
+| **File naming** | PascalCase, descriptive `.java` file | `LibraryCatalogLookup.java` |
+| **Tracked files** | Only `.java` source files (no `.class`, no IDE configs) | — |
+
+> **Note:** Sessions 1–5 use `class_problems/` and `assignment_problems/` as subfolder names; Sessions 6+ use `classwork/` and `homework/`. Both are valid — stay consistent within a session.
 
 ---
 
@@ -190,3 +249,26 @@ This repository contains the complete solutions for all **STEP Semester 3** Java
   3. `RotateRoster.java` — Duty roster rotation by k places using k % n (O(n) time, O(n) space)
   4. `CountInBand.java` — Logarithmic band range count using lower & upper bound binary search (O(log n) time, O(1) space)
   5. `SecondHighestScore.java` — Second-highest distinct score without sorting (O(n) time, O(1) space)
+
+---
+
+### Session 11 — Category C: Search, Hashing & Sorting Algorithms
+- **Completion Date:** 31-10-2026
+- **Branch:** `feature/session_11`
+- **Classwork (Part A — Coding Problems):**
+  1. `LibraryCatalogLookup.java` — Binary search on sorted ISBN catalog (O(log n) time, O(1) space)
+  2. `WarehouseBinGridScan.java` — Grid scan for total item count & max-bin coordinates (O(m·n) time, O(1) space)
+  3. `TransactionDuplicateCheck.java` — HashSet-based duplicate detection (O(n) time, O(n) space)
+  4. `EmployeeIdLookup.java` — HashMap build & O(1) department lookup
+  5. `PairWithTargetSum.java` — HashSet complement check for two-sum (O(n) time, O(n) space)
+  6. `BestSingleTradeProfit.java` — Single-pass min-price tracking for max profit (O(n) time, O(1) space)
+  7. `InsertPositionInSortedList.java` — Binary search insert position (O(log n) time, O(1) space)
+  8. `SpiralOrderTraversal.java` — Four-boundary clockwise spiral traversal (O(m·n) time)
+  9. `PairSumSortedArray.java` — Two-pointer pair sum on sorted array (O(n) time, O(1) space)
+  10. `RemoveDuplicatesSortedArray.java` — In-place two-pointer deduplication (O(n) time, O(1) space)
+- **Homework (Sorting Algorithms):**
+  1. `HeightLineUp.java` — Bubble Sort with pass-by-pass printing & early termination
+  2. `PrizeTable.java` — Selection Sort (descending) with actual swap counting
+  3. `LibraryBookShelf.java` — Insertion Sort with shelf state after each placement
+  4. `QueueOrderCheck.java` — Single-pass sorted-order validation (returns first break index)
+  5. `DiceThrowTally.java` — Counting Sort for dice rolls (1–6), no element comparisons
